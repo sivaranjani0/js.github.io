@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concatenate Names</title>
+    <style>
+        body{
+            background-image:url('https://tse4.mm.bing.net/th?id=OIP.TQl0X24GzuZ2Jltax5Cz_wHaE7&pid=Api&P=0&h=180');
+            background-size: cover;
+            label{
+                font-size: 50px;
+            color: rgba(13, 243, 70, 0.813);
+            }
+            input{
+                font-size: 50px;
+                color:rgb(230, 100, 13);
+            }
+            
+        #result {
+            font-size: 50px;
+        }
+        button{
+            font-size: 25px;
+            margin-top: 20px;;
+        }
+        
+        }
+    </style>
+</head>
+<body>
+    <label for="firstName">First Name:</label><br>
+    <input type="text" id="firstName"><br>
+
+    <label for="lastName">Last Name:</label><br>
+    <input type="text" id="lastName"><br>
+
+    <button onclick="concatenateNames()">Click</button>
+
+    <p id="result"></p>
+
+    <script> 
+        function concatenateNames() {
+            var firstName = document.getElementById("firstName").value;
+            var lastName = document.getElementById("lastName").value;
+            var fullName = firstName + " " + lastName;
+            document.getElementById("result").innerText = "Full Name: " + fullName;
+            document.getElementById("result").style.color="White";
+            
+        }
+    </script>
+</body>
+</html>
